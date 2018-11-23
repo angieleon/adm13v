@@ -22,7 +22,7 @@ Códigos del grupo DDWG13 Vespertino del Diplomado en Diseño Web de Centro ADM.
 1. Miércoles 28-Nov-18 de 7pm a 9pm
 1. Miércoles 12-Dic-18 de 7pm a 10pm
 1. Miércoles 19-Dic-18 de 7pm a 10pm
-1. Lunes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07-Ene-19 de 7pm a 9pm
+1. Lunes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07-Ene-19 de 7pm a 9pm
 1. Miércoles 09-Ene-19 de 7pm a 9pm
 1. Miércoles 16-Ene-19 de 7pm a 9pm
 
