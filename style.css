@@ -24,6 +24,8 @@
 
   --link-color: #509EE3;
   --link-hover-color: var(--main-color);
+
+  --navbar-height: 64px;
 }
 
 html {
@@ -42,6 +44,18 @@ body {
   overflow-y: scroll;
 }
 
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  transition: all .3s ease;
+}
+
+a:hover { color: var(--link-hover-color); }
+
+h2 { font-size: 3rem; }
+
+h3 { font-size: 2.5rem; }
+
 /* Estilos de Bootstrap Modificados */
 .bg-dark {
   background-color: var(--second-color) !important;
@@ -49,6 +63,37 @@ body {
 
 .navbar-dark .navbar-nav  {
   background-color: var(--second-modal-color) !important;
+}
+
+.navbar-brand img {
+  padding: .5rem;
+  width: auto;
+  height: var(--navbar-height);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: all .3s ease;
+}
+
+.navbar-dark .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217, 0, 98, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item:hover {
+  background-color: var(--main-modal-color);
+  transition: all .3s ease;
+}
+
+.nav-link {
+  color: var(--main-color) !important;
+  font-size: 1.15rem;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.nav-link:hover {
+  color: var(--bg-color) !important;
 }
 
 /* Estilos propios */
