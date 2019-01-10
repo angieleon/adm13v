@@ -97,6 +97,21 @@ h3 { font-size: 2.5rem; }
 }
 
 /* Estilos propios */
+.single-page {
+  background-image: url('img/site-singlepage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.multi-page {
+  background-image: url('img/site-multipage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-light-transparent {
+  background-color: var(--bg-modal-color);
+}
 
 
 /* MEDIAQUERIES DE BOOTSTRAP */
