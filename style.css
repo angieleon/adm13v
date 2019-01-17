@@ -5,7 +5,7 @@
   --font-size: 16px;
 
   --main-color: rgb(217, 0, 98);
-  --main-modal-color: rgba(217, 0, 98, .75);
+  --main-modal-color: rgb(217, 0, 98, .75);
   --second-color: rgb(20, 25, 45);
   --second-modal-color: rgba(20, 25, 45, .75);
   --alternate-color: rgb(80, 20, 100);
@@ -96,6 +96,8 @@ h3 { font-size: 2.5rem; }
   color: var(--bg-color) !important;
 }
 
+.card-img-overlay { background-color: var(--second-modal-color); }
+
 /* Estilos propios */
 .single-page {
   background-image: url('img/site-singlepage.jpg');
@@ -113,6 +115,8 @@ h3 { font-size: 2.5rem; }
   background-color: var(--bg-modal-color);
 }
 
+.bg-contact { background-color: var(--second-modal-color); }
+
 .full-screen {
   width: 100vw; /* Viewport Width */
   min-height: 100vh /* Viewport Height */
@@ -127,7 +131,7 @@ h3 { font-size: 2.5rem; }
   background: -ms-linear-gradient(-45deg, rgba(72,161,194,1) 0%, rgba(72,161,194,1) 42%, rgba(27,207,54,1) 100%);
   background: linear-gradient(135deg, rgba(72,161,194,1) 0%, rgba(72,161,194,1) 42%, rgba(27,207,54,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48a1c2', endColorstr='#1bcf36', GradientType=1 );
-  font-size: 150;
+  font-size: 150%;
 }
 
 .section-services img {
