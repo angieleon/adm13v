@@ -11,17 +11,49 @@
 <body>
   <h1>Aprendiendo a programar con JS</h1>
   <script>
+    //comentario de una línea
+    /*
+    Comentario
+    de varias
+    líneas
+    */
+
+    // declaración de una función
     function parImpar() {
+      //declarando una variable llamada numero y le asigna la ejecución de un prompt
       let numero = prompt('Ingresa un número'),
         modulo = numero % 2,
         par = `El número: ${numero} es Par`,
-        impar = `El número: ${numero} es Impar`
+        impar = `El número: ${numero} es Impar`;
 
-      return (modulo === 0) ? par : impar
+      if (modulo === 0) {
+        return par;
+      } else {
+        return impar;
+      }
+      //operador ternario
+      //(condición) ? true : false ;
+      //return (modulo === 0) ? par : impar;
     }
 
-    parImpar()
+    //invocación / ejecución de mi función
+    //parImpar();
+
+    //regresar el valor en una alerta
+    //alert(parImpar());
+    //regresar el valor a la consola
+    //console.log(parImpar());
+    //regresar el valor al documento HTML
+    document.write(parImpar());
+
+
+    /*
+      Tarea 1: Pensar en los pasos a seguir para validar que el usuario introduzca realmente un número
+      Tarea 2: Investiga como se asigna un evento en JS y implementa la función parImpar en el botón HTML
+      Tarea 3: Investiga los tipos de datos principales en JS
+     */
   </script>
+  <button>Par Impar</button>
 </body>
 
 </html>
