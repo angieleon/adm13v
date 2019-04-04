@@ -10,6 +10,21 @@
 
 <body>
   <h1>Aprendiendo a programar con JS</h1>
+  <!-- <button onclick="parImpar()">Par Impar</button> -->
+  <button id="boton">Par Impar</button>
+  <h2>Tipos de Datos en JavaScript</h2>
+  <h3>Primitivos</h3>
+  <ul>
+    <li>Strings</li>
+    <li>Numbers</li>
+    <li>Booleans</li>
+  </ul>
+  <h3>Complejos</h3>
+  <ul>
+    <li>Functions</li>
+    <li>Arrays</li>
+    <li>Objects</li>
+  </ul>
   <script>
     //comentario de una línea
     /*
@@ -25,6 +40,19 @@
         modulo = numero % 2,
         par = `El número: ${numero} es Par`,
         impar = `El número: ${numero} es Impar`;
+
+      //Utilizar un aExpresión regular que valide si lo que se introduce en el prompt es un número, sino mandar un mensaje
+
+      //https://es.wikipedia.org/wiki/Expresi%C3%B3n_regular
+
+      /* if (!/^([0-9])*$/.test(numero)) {
+        return "El valor " + numero + " no es un número";
+      } */
+
+      //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/isNaN
+      if (isNaN(numero)) {
+        return "El valor " + numero + " no es un número";
+      }
 
       if (modulo === 0) {
         return par;
@@ -44,7 +72,7 @@
     //regresar el valor a la consola
     //console.log(parImpar());
     //regresar el valor al documento HTML
-    document.write(parImpar());
+    //document.write(parImpar());
 
 
     /*
@@ -52,8 +80,51 @@
       Tarea 2: Investiga como se asigna un evento en JS y implementa la función parImpar en el botón HTML
       Tarea 3: Investiga los tipos de datos principales en JS
      */
+
+    var boton = document.getElementById('boton');
+
+    console.log(boton);
+
+    //este evento ejecuta una función definida
+    //boton.addEventListener('click', parImpar);
+
+    //este evento ejecuta una función anónima
+    boton.addEventListener('click', function () {
+      //alert(parImpar());
+      //document.write(parImpar());
+      console.log(parImpar());
+    });
+
+    //Tipos de Datos
+    //Strings o Cadenas de Texto
+    var cadena = "Hola";
+    var cadenaDos = 'Adios';
+
+    console.log(cadena, cadenaDos);
+    console.log(
+      cadena.length, //propiedad
+      cadena.toLowerCase(), //método
+      cadena.toUpperCase()
+    );
+
+    //var codigoHTML = "<h2 class='container'>Encabezado 2</h2>";
+    //var codigoHTML = "<h2 class=\"container\">Encabezado 2</h2>";
+    var codigoHTML = '<h2 class="container">Encabezado 2</h2>';
+    document.write(codigoHTML);
+
+    //Numbers
+    var numeroUno = 19;
+    var numeroDos = 4.4;
+    var aleatorio = Math.random() * 10;
+    var redondeado = Math.round(aleatorio);
+
+    console.log(numeroUno + numeroDos);
+    console.log(aleatorio);
+    console.log(redondeado);
+
+    //Booleans
+    console.log(true, false);
   </script>
-  <button>Par Impar</button>
 </body>
 
 </html>
