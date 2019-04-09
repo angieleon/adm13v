@@ -188,7 +188,6 @@
       console.log('Eres Menor de Edad');
     }
 
-    var hora = 20;
 
     /*
     Saludar en base a la hora:
@@ -198,11 +197,21 @@
       Buenas noches 19 a 23
 
     Pistas:
-      uso de id anidados else if...
+      uso de if anidados else if...
       Uso de operadores lógicos con 2 o más condiciones
     */
 
+    var hora = 20;
 
+    if (hora <= 6) {
+      console.log('Que chingados quieres');
+    } else if (hora >= 7 && hora <= 11) {
+      console.log('Buenas Días');
+    } else if (hora >= 12 && hora <= 18) {
+      console.log('Buenas Tardes');
+    } else {
+      console.log('Buenas Noches');
+    }
   </script>
 </body>
 
