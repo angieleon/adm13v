@@ -124,6 +124,85 @@
 
     //Booleans
     console.log(true, false);
+
+    var estudiantes = ['Blanca', 'Abraham', 'Varinia', 'Thania'];
+
+    console.log(estudiantes);
+
+    console.log(estudiantes.length);
+
+    console.log(estudiantes[2]);
+
+    estudiantes[3] = 'Thania Elizabeth';
+
+    console.log(estudiantes.reverse());
+
+    estudiantes.push('Jonathan');
+
+    console.log(estudiantes);
+
+    var datosEstudiantes = [
+      ['Blanca', 'b.e.angie22@gmail.com', 30, false],
+      ['Abraham', 'enyg_90@hotmail.com', 28, false],
+      ['Varinia', 'varinia.aguilar.dellano@gmail.com', 39, true],
+      ['Thania', ['tannelilo@gmail.com', 'Calle', 'Telefono'], 31, true]
+    ];
+
+    console.log(datosEstudiantes[1]);
+    console.log(datosEstudiantes[0][2]);
+    console.log(datosEstudiantes[3][1][1]);
+
+    var blanca = {
+      //Atributos: son variables que existen dentro de un objeto
+      nombre: 'Blanca',
+      email: 'b.e.angie22@gmail.com',
+      edad: 30,
+      casado: false,
+      //métodos son funciones que existen dentro d eun objeto
+      saludar: function (nombre = 'Desconocido') {
+        //concatenación
+        console.log('Hola ' + nombre)
+      }
+    }
+
+    console.log(blanca);
+    console.log(blanca.email);
+    blanca.saludar('Varinia')
+    blanca.saludar()
+
+
+    /* COndicionales y Operadores */
+    var edad = 18;
+
+    //SI usas los operadores simples > < excluyes al valor dentro la condicional
+    if (edad > 18) {
+      console.log('Eres Mayor de Edad');
+    } else {
+      console.log('Eres Menor de Edad');
+    }
+
+    //SI usas los operadores combinados >= <= incluyes al valor dentro de la condicional
+    if (edad >= 18) {
+      console.log('Eres Mayor de Edad');
+    } else {
+      console.log('Eres Menor de Edad');
+    }
+
+    var hora = 20;
+
+    /*
+    Saludar en base a la hora:
+      Que chingados quieres 0 a 6
+      Buenos días 7 a 11
+      Buenas tardes 12 a 18
+      Buenas noches 19 a 23
+
+    Pistas:
+      uso de id anidados else if...
+      Uso de operadores lógicos con 2 o más condiciones
+    */
+
+
   </script>
 </body>
 
