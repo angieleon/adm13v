@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .menu {
+      display: none;
+    }
+
+    .show-menu {
+      display: block;
+    }
+
+    .hide-menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn-menu">Menú</button>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Enlace 1</a></li>
+      <li><a href="#">Enlace 2</a></li>
+      <li><a href="#">Enlace 3</a></li>
+      <li><a href="#">Enlace 4</a></li>
+      <li><a href="#">Enlace 5</a></li>
+    </ul>
+  </nav>
+  <script>
+    /*
+        tarea 2:
+       Analiza una barra de navegación móvil (por ejemplo la de bootstrap) y crea el algoritmo en lenguaje humano de cómo funciona
+       */
+
+    /*
+      La siguiente clase analizar el efecto de la navbar de ADM
+     */
+
+
+    /*
+    = significa ASIGNACIÓN lo que esta del lado derecho se lo asigno al izquierdo
+    x = 67
+
+    == significa COMPARACIÓN de VALORES, lo que esta del lado izq. es igual a lo que esta a la derecha en valor
+    3 == '3' //true
+
+    === significa COMPARACIÓN de VALORES y TIPO DE DATO, lo que esta del lado izq. es igual a lo que esta a la derecha en valor
+    3 === '3' //false
+     */
+    var btnMenu = document.getElementById('btn-menu')
+    var menu = document.querySelector('.menu')
+
+    console.log(btnMenu, menu)
+
+    btnMenu.addEventListener('click', function () {
+      if (menu.style.display == 'block') {
+        menu.style.display = 'none'
+      } else {
+        menu.style.display = 'block'
+      }
+
+
+    })
+  </script>
+  <button id="btn-menu-2">Menú</button>
+  <nav class="menu-2">
+    <ul>
+      <li><a href="#">Enlace 1</a></li>
+      <li><a href="#">Enlace 2</a></li>
+      <li><a href="#">Enlace 3</a></li>
+      <li><a href="#">Enlace 4</a></li>
+      <li><a href="#">Enlace 5</a></li>
+    </ul>
+  </nav>
+  <script>
+    /* INvestiguen quie son las transformaciones en CSS y que tipos de transformaciones tenemos */
+  </script>
+</body>
+
+</html>

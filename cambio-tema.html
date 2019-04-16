@@ -64,15 +64,26 @@
 
       tarea 1: llevar a código este algoritmo
      */
+    //console.log(document.querySelector('.navbar-brand'))
 
-    /*
-      tarea 2:
-     Analiza una barra de navegación móvil (por ejemplo la de bootstrap) y crea el algoritmo en lenguaje humano de cómo funciona
-     */
+    var botonBrand = document.querySelector('.navbar-brand')
+    var navbar = document.querySelector('.navbar')
 
-    /*
-    LA siguiente clase analizar el efecto de la navbar de ADM
-     */
+    console.log(navbar.classList)
+
+    botonBrand.addEventListener('click', function () {
+      //alert('Hola')
+      if (botonBrand.textContent == 'Navbar light') {
+        botonBrand.textContent = 'Navbar dark'
+        navbar.classList.remove('navbar-light', 'bg-light')
+        navbar.classList.add('navbar-dark', 'bg-dark')
+      } else {
+        botonBrand.textContent = 'Navbar light'
+        navbar.classList.add('navbar-light', 'bg-light')
+        navbar.classList.remove('navbar-dark', 'bg-dark')
+      }
+    })
+
   </script>
 </body>
 
