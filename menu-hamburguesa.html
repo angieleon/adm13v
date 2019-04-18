@@ -11,12 +11,26 @@
       display: none;
     }
 
+    .menu-2 {
+      background-color: aquamarine;
+      transition: all .3s ease-in-out;
+    }
+
     .show-menu {
-      display: block;
+      transform: translate(0, 0);
+      opacity: 1;
     }
 
     .hide-menu {
-      display: none;
+      /* El menú salga de abajo */
+      transform: translate(0, 100vh);
+      /* El menú salga de izquierda */
+      transform: translate(-100vw, 0);
+      /* El menú salga de derecha */
+      transform: translate(100vw, 0);
+      /* El menú salga de arriba */
+      transform: translate(0, -100vh);
+      opacity: 0;
     }
   </style>
 </head>
@@ -68,8 +82,9 @@
 
     })
   </script>
+
   <button id="btn-menu-2">Menú</button>
-  <nav class="menu-2">
+  <nav class="menu-2 hide-menu">
     <ul>
       <li><a href="#">Enlace 1</a></li>
       <li><a href="#">Enlace 2</a></li>
@@ -79,7 +94,19 @@
     </ul>
   </nav>
   <script>
-    /* INvestiguen quie son las transformaciones en CSS y que tipos de transformaciones tenemos */
+    /* Investiguen quie son las transformaciones en CSS y que tipos de transformaciones tenemos */
+    var menu2 = document.querySelector('.menu-2');
+    var btnMenu2 = document.getElementById('btn-menu-2');
+
+    btnMenu2.addEventListener('click', function () {
+      if (menu2.classList.contains('hide-menu')) {
+        menu2.classList.remove('hide-menu')
+        menu2.classList.add('show-menu')
+      } else {
+        menu2.classList.add('hide-menu')
+        menu2.classList.remove('show-menu')
+      }
+    })
   </script>
 </body>
 
